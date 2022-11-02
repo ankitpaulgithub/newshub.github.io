@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&family=PT+Serif:wght@400;700&family=Roboto:wght@500&display=swap');
+
+@media screen and (max-width:800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #efefef;
+        ;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo {
+        height: 105px;
+        width: 491px;
+        background: black;
+        color: white;
+        font-size: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .hub {
+        height: 68px;
+        width: 154px;
+        background: #f7971d;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 8px;
+        font-size: 77px;
+        align-items: right;
+    }
+
+    .date {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin: 3px 0 0 0;
+    }
+
+    .home {
+        height: 31px;
+        background-color: black;
+    }
+
+    a {
+        overflow: hidden;
+        color: white;
+        padding: 6px 22px;
+        text-decoration: none;
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    body {
+        background-color: #efefef;
+    }
+
+    .container {
+        margin: 0 7vw;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .h1 {
+        font-family: 'PT Serif', serif;
+        font-size: 3.4vw;
+        padding: 0 10.5px;
+    }
+
+    .h2 {
+        font-size: 2vw;
+        font-family: 'PT Serif', serif;
+        padding: 0 5px;
+    }
+
+    .by {
+        margin: 20px 0 5px 0;
+        margin: 15px 0 5px 0;
+        padding: 0 6px;
+        font-size: 2vw;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        margin: 20px 0 2px 0;
+        height: 335px;
+        width: 481px;
+        overflow: hidden;
+    }
+
+    .p {
+        font-family: 'PT Serif', serif;
+        padding: 4px 7px;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .cr,
+    .ankit {
+        display: inline-block;
+        width: 50%;
+        font-size: smaller;
+    }
+
+    .ankit {
+        text-align: right;
+
+    }
+
+}
+
+@media (max-width: 630px) {
+    .container {
+        margin: 0;
+    }
+
+    .cr,
+    .ankit {
+        font-size: x-small;
+    }
+}

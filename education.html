@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Newshub</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        const option = { weekday: 'long', year:'numeric', month:'long',day:'numeric'};
+        setInterval(() => {
+            
+            a = new Date();
+             date = a.toLocaleDateString(undefined,option);
+             time = a.getHours() + ":"+ a.getMinutes()+":"+ a.getSeconds();
+            document.getElementById('time').innerHTML = time + " on " + date;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="logo">News
+            <div class="hub">hub</div>
+           </div>
+        </nav>
+        <div class="date">Time : <span id="time"></span> </div>
+    </header>
+    <div class="home">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="menu">MENU</label>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="policits.html">Politics</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="education.html"class="active">Education</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="container">
+        <p class="h1">CUET UG Admit Card 2022 Date and Time Released: Hall tickets for Phase II students to be released tomorrow</p>
+    
+
+
+        <p class="h2">CUET UG Admit Card 2022 Date and Time: Registered candidates can download their hall tickets from the official website — cuet.samarth.ac.in — by logging in through their registered credentials.</p>
+
+
+        <div class="by">By: The Indian Express |
+            <br>
+            Updated: July 31, 2022 10:32:09 pm</div>
+            <hr>
+            <div class="img"><img src="img/jee.jpg" alt=""></div>
+            <div class="article">
+                
+                <div class="p">
+                    CUET UG Admit Card 2022 Date and Time: The National Testing Agency (NTA) will release the admit cards for the Common University Entrance Test undergraduate (CUET UG) 2022 tomorrow, i.e. August 1, for the Phase II candidates. Once released, registered candidates will be able to download their hall tickets from the official CUET UG website  — cuet.samarth.ac.in — by logging in through their registered credentials.
+<br><br>
+This time, only the hall tickets of the phase II students will be released. These candidates had already received an advance city intimation slip from the official CUET website in the second week of July. This slip carries a unique date sheet along with the name of the city allotted to individual candidates. Now, the candidates will be given the exam date, time and exam centre address. <br><br>
+CUET UG Admit Card 2022: How to download
+<br><br>
+Step 1: Visit the official CUET website — cuet.samarth.ac.in. <br>
+Step 2: On the home page, click on the student login section.
+<br>
+Step 3: Key in your application number and date of birth to login. <br>
+Step 4: You will be able to see links for city intimation slip and admit card.
+<br>
+Step 5: Download and save both for future reference.
+<br>
+The Phase I exams were conducted on July 15, 16, 19 and 20, and the second phase exams are scheduled to take place on August 4, 5, 6, 7, 8, 10 and 20. <br>
+                </div>
+                 </div>
+    </div>
+    <footer>
+      <p class="cr">Copyright &copy; 2022 Newshub [P] Ltd. All Rights Reserved  </p>
+      <div class="ankit">-By Ankit Paul_  </div>
+    </footer>
+
+</body>
+</html>

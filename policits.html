@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Newshub</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        const option = { weekday: 'long', year:'numeric', month:'long',day:'numeric'};
+        setInterval(() => {
+            
+            a = new Date();
+             date = a.toLocaleDateString(undefined,option);
+             time = a.getHours() + ":"+ a.getMinutes()+":"+ a.getSeconds();
+            document.getElementById('time').innerHTML = time + " on " + date;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="logo">News
+            <div class="hub">hub</div>
+           </div>
+        </nav>
+        <div class="date">Time : <span id="time"></span> </div>
+    </header>
+    <div class="home">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="menu">MENU</label>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="policits.html" class="active">Politics</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="container">
+        <p class="h1">Swatantra Dev Singh at exit door, decks cleared for UP BJP to get new president
+
+        </p>
+    
+
+
+        <p class="h2">The incumbent UP BJP president, Swatantra Dev Singh, has already completed his three-year tenure a couple of weeks ago, following which there has been a buzz that he has quit his post.</p>
+
+
+        <div class="by">By: The Indian Express |
+            <br>
+            Updated: July 31, 2022 10:18:09 pm</div>
+            <hr>
+            <div class="img"><img src="img/parliament.jpg" alt=""></div>
+            <div class="article">
+                
+                <div class="p">
+                    As the BJP leadership effected a change in the Uttarakhand party unit by appointing Mahendra Bhatt as its new president Saturday, the word doing the rounds in the ongoing training camp of neighbouring Uttar Pradesh’s party unit in Chitrakoot was that it was also going to get a new full-time chief very soon.
+<br><br>
+                </div>
+                 </div>
+    </div>
+    <footer>
+      <p class="cr">Copyright &copy; 2022 Newshub [P] Ltd. All Rights Reserved  </p>
+      <div class="ankit">-By Ankit Paul_  </div>
+    </footer>
+
+</body>
+</html>

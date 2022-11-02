@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Newshub</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        const option = { weekday: 'long', year:'numeric', month:'long',day:'numeric'};
+        setInterval(() => {
+            
+            a = new Date();
+             date = a.toLocaleDateString(undefined,option);
+             time = a.getHours() + ":"+ a.getMinutes()+":"+ a.getSeconds();
+            document.getElementById('time').innerHTML = time + " on " + date;
+        }, 1000);
+    </script>
+</head> <header>
+    <nav>
+       <div class="logo">News
+        <div class="hub">hub</div>
+       </div>
+    </nav>
+    <div class="date">Time : <span id="time"></span> </div>
+</header>
+<div class="home">
+    <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="menu">MENU</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="policits.html">Politics</a></li>
+            <li><a href="sports.html" class="active">Sports</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+</div>
+
+
+
+<div class="container">
+    <p class="h1">Commonwealth Games 2022 Medal Tally: Medal standings and India tally on Day 3
+
+    </p>
+
+
+
+    <p class="h2">Commonwealth Games 2022 Medal Tally: Jeremy Lalrinnunga's gold medal in the men's 67kg final took India to sixth in the medals tally in CWG 2022 with two golds and five overall.
+    </p>
+
+
+    <div class="by">By: The Indian Express |
+        <br>
+        Updated: July 311, 2022 10:19:09 pm</div>
+        <hr>
+        <div class="img"><img src="img/ipl.jpg" alt=""></div>
+        <div class="article">
+            
+            <div class="p">
+                <!-- <div class="img"><img src="img/score.jpg" alt="" width="900px" ></div>
+                Scorecard
+                <br>
+                INDIA
+                <div class="img"><img src="img/india.jpg" alt=""></div>
+                ENGLAND
+                <div class="img"><img src="img/england.jpeg" alt=""></div> -->
+                Commonwealth Games 2022 Medal Tally: Touted as one of the games where India would dominate at the Commonwealth Games in Birmingham, Weightlifting won India another gold and a fifth overall medal on Sunday, July 31. The most recent of the winners, 19-year old Jeremy Lalrinnunga lifted a total of 300kg across Snatch and Clean & Jerk to top the men’s 67kg category. Lalrinnunga also broke the Games record in his category with a 140kg lift in Snatch.
+<br><br>
+Earlier on Saturday, Mirabai Chanu had headlined a four medal count with her gold medal in the women’s 49kg event. Sanket Sargar and Bindyarani Devi had clinched silver medals in men’s and women’s 55kg events respectively while Gururaja Poojary won bronze in men’s 61kg.
+<br><br>
+India jumped above Malaysia, who have seven medals, in the tally owing to their second gold. The table is sorted by the most gold medals won and also includes tallies for silver, bronze, and the total medals till after Jeremy Lalrinnunga’s event in Weightlifting. <br><br>
+            </div>
+         </div>
+</div>
+<footer>
+  <p class="cr">Copyright &copy; 2022 Newshub [P] Ltd. All Rights Reserved  </p>
+  <div class="ankit">-By Ankit Paul_  </div>
+</footer>
+
+</body>
+</html>
